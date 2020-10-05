@@ -2,7 +2,7 @@
 
 GitHub Actions is all the craze and to get you up to speed, we invite you to join us for this workshop. You can work on your own pace, or join us through the steps. You'll have to create a GitHub Actions workflow to set up a CI/CD pipeline for a Docker-based Node.js application.
 
-Thanks for participating and keep learning! We have an extensive set of [free learning modules on how to automate using GitHub Actions](https://docs.microsoft.com/en-us/learn/paths/automate-workflow-github-actions/?ocid=aid3016779) - highly recommended!!
+Thanks for participating and keep learning! We have an extensive set of [free learning modules on how to automate using GitHub Actions](https://docs.microsoft.com/en-us/learn/paths/automate-workflow-github-actions/?ocid=aid3023559) - highly recommended!!
 
 *Are you ready to show off your GitHub Actions skills at the next birthday party?*
 
@@ -30,7 +30,7 @@ We'd love it if you also **share your experience on social media**! You can use 
 
 ## Challenge 1: adding a GitHub Actions workflow to your repository
 
-To get started, you will have to create a GitHub Actions workflow to your repository that will be triggered as soon as code is pushed to the main branch. We will be building on top of this workflow in the follow-on challenges. Check out the [Getting Started Guide for GitHub Actions](https://docs.github.com/en/actions/getting-started-with-github-actions?ocid=aid3016779).
+To get started, you will have to create a GitHub Actions workflow to your repository that will be triggered as soon as code is pushed to the main branch. We will be building on top of this workflow in the follow-on challenges. Check out the [Getting Started Guide for GitHub Actions](https://docs.github.com/en/actions/getting-started-with-github-actions?ocid=aid3023559).
 
 To complete this first coding challenge, you will have to:
 
@@ -42,7 +42,7 @@ To complete this first coding challenge, you will have to:
 
 ## Challenge 2: building a docker image and publishing it
 
-Now that you have a GitHub Actions workflow up and running, which is triggered each time you push code to your main branch, the next step is to checkout the source code and create the Docker image. Have a look at the [GitHub Actions marketplace](https://github.com/marketplace?type=actions?ocid=aid3016779) for community actions that you can leverage.
+Now that you have a GitHub Actions workflow up and running, which is triggered each time you push code to your main branch, the next step is to checkout the source code and create the Docker image. Have a look at the [GitHub Actions marketplace](https://github.com/marketplace?type=actions?ocid=aid3023559) for community actions that you can leverage.
 
 The sample application is a Node.js application that exposes a REST API (http://localhost/addtowall) to post a random zen quote on our [Wall of Zen](https://aka.ms/wallofzen). 
 
@@ -52,16 +52,16 @@ To complete this second coding challenge, you need to configure the GitHub Actio
 2. **Builds** a docker images for the sample application
 3. **Publishes** the docker image to a container registry (e.g. Azure Container Registry or Docker Hub)
 
-> **Important**: Make sure not to store your registry credentials in your workflow file! You may want to take a look at [this article](https://docs.github.com/en/actions/configuring-and-managing-workflows/using-variables-and-secrets-in-a-workflow?ocid=aid3016779) to find out how to work with secrets.
+> **Important**: Make sure not to store your registry credentials in your workflow file! You may want to take a look at [this article](https://docs.github.com/en/actions/configuring-and-managing-workflows/using-variables-and-secrets-in-a-workflow?ocid=aid3023559) to find out how to work with secrets.
 
 
 ## Challenge 3: deploying the container image to Azure Container Instances
 
-With the Docker image available in the container registry, you can now deploy to have a running instance of the application. In this coding challenge we will be using [Azure Container Instances](https://docs.microsoft.com/en-us/azure/container-instances/container-instances-overview?ocid=aid3016779) (ACI). ACI allows you to easily deploy a container without having to worry about the underlaying infrastructure and just pay for the requests that it processes. At the end of this challenge, you will have a public-facing endpoint for the Node.js REST API.
+With the Docker image available in the container registry, you can now deploy to have a running instance of the application. In this coding challenge we will be using [Azure Container Instances](https://docs.microsoft.com/en-us/azure/container-instances/container-instances-overview?ocid=aid3023559) (ACI). ACI allows you to easily deploy a container without having to worry about the underlaying infrastructure and just pay for the requests that it processes. At the end of this challenge, you will have a public-facing endpoint for the Node.js REST API.
 
 GitHub Actions workflow can run multiple jobs in parallel and also have dependencies between jobs. In this challenge you will put the deployment phase of the entire CI/CD pipeline in a separate job. As this 'deployment' job can only run when the 'build' job has completed, you will need to define a dependency between both jobs.
 
-Check the [GitHub Actions for Azure](https://azure.microsoft.com/en-us/blog/github-actions-for-azure-is-now-generally-available/?ocid=aid3016779) to find out how to connect to Azure from within your workflow.
+Check the [GitHub Actions for Azure](https://azure.microsoft.com/en-us/blog/github-actions-for-azure-is-now-generally-available/?ocid=aid3023559) to find out how to connect to Azure from within your workflow.
 
 To complete the third challenge, you will further evolve the GitHub Actions workflow to:
 
@@ -77,7 +77,7 @@ BASE_URL=https://devopsdaysams.azurewebsites.net/api/AddToWall
 
 ## Challenge 4: invoke the API to post a quote on the Wall of Zen
 
-With the Node.js REST API up-and-running, what's left is to invoke the REST API from within your workflow. Invoking the API is a matter of calling an HTTP GET on a given method. You can find several community actions in the [GitHub Actions marketplace](https://github.com/marketplace?type=actions?ocid=aid3016779) that can achieve this.
+With the Node.js REST API up-and-running, what's left is to invoke the REST API from within your workflow. Invoking the API is a matter of calling an HTTP GET on a given method. You can find several community actions in the [GitHub Actions marketplace](https://github.com/marketplace?type=actions?ocid=aid3023559) that can achieve this.
 
 The URL of the API running on ACI is structured as follows: **http://myaci.westeurope.azurecontainer.io:80/addtowall?repoUrl=https://github.com/myorg/myrepo**. You will need to construct this URL based on output from the ACI deployment step, and the current GitHub repository name.
 
@@ -111,10 +111,10 @@ To complete this final bonus challenge, you can now finalize your GitHub Actions
 
 ## Suggested resources 🚀
 
-* [Visual Studio Code](https://code.visualstudio.com?ocid=aid3016779)
-* Azure Subscription: [Sign up](https://azure.microsoft.com/en-us/free/?ocid=aid3016779) for a free Azure account
-* [GitHub Actions Getting Started](https://docs.github.com/en/actions/getting-started-with-github-actions?ocid=aid3016779)
-* [GitHub Actions for deploying to Azure](https://github.com/Azure/actions?ocid=aid3016779)
+* [Visual Studio Code](https://code.visualstudio.com?ocid=3023559)
+* Azure Subscription: [Sign up](https://azure.microsoft.com/en-us/free/?ocid=aid3023559) for a free Azure account
+* [GitHub Actions Getting Started](https://docs.github.com/en/actions/getting-started-with-github-actions?ocid=aid3023559)
+* [GitHub Actions for deploying to Azure](https://github.com/Azure/actions?ocid=aid3023559)
 
 
 ## Contributing 🚩
