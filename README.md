@@ -1,15 +1,15 @@
-# devopsdays oNLine: GitHub Actions coding challenge (Wall of Zen)
+# Future Tech GitHub Actions workshop (Wall of Zen)
 
-GitHub Actions is all the craze and to get you up to speed, we have created a series of **5 short coding challenges**. You will have to create a GitHub Actions workflow to set up a CI/CD pipeline for a Docker-based Node.js application.
+GitHub Actions is all the craze and to get you up to speed, we invite you to join us for this workshop. You can work on your own pace, or join us through the steps. You'll have to create a GitHub Actions workflow to set up a CI/CD pipeline for a Docker-based Node.js application.
 
-Thanks for participating in this coding challenge and keep learning! We have an extensive set of [free learning modules on how to automate using GitHub Actions](https://docs.microsoft.com/en-us/learn/paths/automate-workflow-github-actions/?ocid=aid3016779) - highly recommended!!
+Thanks for participating and keep learning! We have an extensive set of [free learning modules on how to automate using GitHub Actions](https://docs.microsoft.com/en-us/learn/paths/automate-workflow-github-actions/?ocid=aid3016779) - highly recommended!!
 
-*Are you ready to show off your GitHub Actions skills?*
+*Are you ready to show off your GitHub Actions skills at the next birthday party?*
 
 
 ## What's this Wall of Zen?
 
-We have created a [Wall of Zen page](https://aka.ms/wallofzen) where you can post Zen quotes for the [devopsdays oNLine](https://devopsdays.org/events/2020-amsterdam/welcome/) attendees. Under the hood it uses the [Octocat GitHub API](https://api.github.com/octocat).
+We have created a [Wall of Zen page](https://aka.ms/wallofzen) where you can post Zen quotes for the Future Tech attendees. Under the hood it uses the [Octocat GitHub API](https://api.github.com/octocat).
 
 
 ![Wall of Zen web page](./assets/wallofzen.png)
@@ -23,7 +23,7 @@ You can check our [Getting started](./GettingStarted.md) guide to learn how to r
 
 You can find the detailed instructions in our [Contributing.md](Contributing.md) guidelines, but here's the TL;DR.
 
-* Submit your final solution as a new [Challenge Solution Submission ISSUE](https://github.com/GitHub-Coding-Challenge/devopsdaysams-actions/issues/new/choose) to this GitHub repository.
+* Submit your final solution as a new [Challenge Solution Submission ISSUE](https://github.com/GitHub-Coding-Challenge/actions-workshop/issues/new/choose) to this GitHub repository.
 
 We'd love it if you also **share your experience on social media**! You can use the **#DevopsWallofZen** Twitter hashtag to do so.
 
